@@ -12,7 +12,7 @@
 | **02** | **connect remote** | `git remote add origin https://github.com/hcg-leo/*` |
 | **03** | **set branch** | `git branch -M main` |
 | **04** | **stage files** (`.` for all) | `git add .` |
-| **05** | **commit** | `git commit -m "<your_message>"` |
+| **05** | **commit** | `git commit -m "*"` |
 | **06** | **push** | `git push -u origin main` |
 
 ### ❯ committing a cloned folder
