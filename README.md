@@ -24,3 +24,11 @@
 | **03** | **commit changes** | `git commit -m "*"` |
 | **04** | **push changes** | `git push` |
 
+### ❯ reverting a commit
+
+| step | action | command |
+|:---|:---|:---|
+| **01** | **commit check** | `git log --oneline` |
+| **02** | **checkout** (`.` for all) | `git checkout <your-commit-hash> .` |
+| **03** | **commit changes** | `git commit -m "Rolling back to older state from commit <your-commit-hash>"` |
+| **04** | **push changes** | `git push` |
