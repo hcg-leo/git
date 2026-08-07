@@ -19,10 +19,11 @@
 
 | step | action | command |
 |:---|:---|:---|
-| **01** | **status check** | `git status` |
-| **02** | **stage changes** (`.` for all) | `git add .` |
-| **03** | **commit changes** | `git commit -m "*"` |
-| **04** | **push changes** | `git push` |
+| **01** | **status check** | `git pull` |
+| **02** | **status check** | `git status` |
+| **03** | **stage changes** (`.` for all) | `git add .` |
+| **04** | **commit changes** | `git commit -m "*"` |
+| **05** | **push changes** | `git push` |
 
 ### ❯ reverting a commit
 
