@@ -54,10 +54,10 @@
 | step | action | command |
 |:---|:---|:---|
 | **01** | **status check** | `git status` |
-| **--** | **if you don't want to commit** | `git stash` |
-| **02** | **create & switch branch** | `git switch -c <*>` |
-| **03** | **stage changes** (`.` for all) | `git add .` |
-| **04** | **commit changes** | `git commit -m "*"` |
+| **02** | **if you don't want to commit** | `git stash` |
+| **03** | **create & switch branch** | `git switch -c <*>` |
+| **04** | **stage changes** (`.` for all) | `git add .` |
+| **05** | **commit changes** | `git commit -m "*"` |
 
 ### <a id="keep-branch"></a>❯ merging code into main branch
 | step | action | command |
