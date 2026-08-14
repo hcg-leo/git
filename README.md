@@ -4,6 +4,7 @@
 
 > a quick-reference guide for getting your local code onto github.
 
+# commit
 ### ❯ committing a cloned folder
 
 | step | action | command |
@@ -33,11 +34,24 @@
 | **03** | **commit changes** | `git commit -m "Rolling back to older state from commit <your-commit-hash>"` |
 | **04** | **push changes** | `git push` |
 
-### ❯ branches
-
+# branches
+### ❯ creating branches
 | step | action | command |
 |:---|:---|:---|
 | **01** | **status check** | `git status` |    | **if you dont want to commit** | `git stash` |
 | **02** | **checkout** (`.` for all) | `git switch -c <*>` |
 | **03** | **commit changes** | `git add .` |
 | **04** | **push changes** | `git commit -m "*"` |
+
+### ❯ want to keep code
+| step | action | command |
+|:---|:---|:---|
+| **01** | **status check** | `git switch main` |
+| **02** | **checkout** (`.` for all) | `git merge <*>` |
+| **03** | **commit changes** | `git branch -d <*>` |
+
+### ❯ want to delete code
+| step | action | command |
+|:---|:---|:---|
+| **01** | **status check** | `git switch main` |
+| **02** | **checkout** (`.` for all) | `git branch -D <*>` |
