@@ -6,12 +6,12 @@
 
 ## table of contents
 * **[Commit](#commit)**
-  * [Committing a cloned folder](#cloned-folder)
-  * [Committing a new folder](#new-folder)
-  * [Reverting a commit](#reverting)
-* **[Branches](#branches)**
-  * [Creating branches](#creating-branches)
-  * [Want to keep code](#keep-code)
+  * [committing a cloned folder](#cloned-folder)
+  * [committing a new folder](#new-folder)
+  * [reverting a commit](#reverting)
+* **[branches](#branches)**
+  * [creating branches](#creating-branches)
+  * [merge code into main branch](#keep-branch)
 
 ---
 
@@ -58,9 +58,15 @@
 | **03** | **stage changes** (`.` for all) | `git add .` |
 | **04** | **commit changes** | `git commit -m "*"` |
 
-### <a id="keep-code"></a>❯ want to keep code
+### <a id="keep-branch"></a>❯ merging code into main branch
 | step | action | command |
 |:---|:---|:---|
 | **01** | **switch to main** | `git switch main` |
 | **02** | **merge branch** | `git merge <*>` |
 | **03** | **delete old branch** | `git branch -d <*>` |
+
+### <a id="remove-branch"></a>❯ removing a branch
+| step | action | command |
+|:---|:---|:---|
+| **01** | **switch to main** | `git switch main` |
+| **02** | **force delete branch** | `git branch -D <*>` |
