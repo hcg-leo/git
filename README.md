@@ -12,6 +12,7 @@
 * **[branches](#branches)**
   * [creating branches](#creating-branches)
   * [merge code into main branch](#keep-branch)
+  * [remove a branch](#remove-branch)
 
 ---
 
