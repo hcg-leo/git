@@ -1,11 +1,23 @@
 # ╔═══════════════════════════╗
-# ║     GIT CHEAT SHEET       ║
+# ║       LEARNING GIT        ║
 # ╚═══════════════════════════╝
 
-> a quick-reference guide for getting your local code onto github.
+> a quick-reference for git commands.
+
+## table of contents
+* **[Commit](#commit)**
+  * [Committing a cloned folder](#cloned-folder)
+  * [Committing a new folder](#new-folder)
+  * [Reverting a commit](#reverting)
+* **[Branches](#branches)**
+  * [Creating branches](#creating-branches)
+  * [Want to keep code](#keep-code)
+
+---
 
 # commit
-### ❯ committing a cloned folder
+
+### <a id="cloned-folder"></a>❯ committing a cloned folder
 
 | step | action | command |
 |:---|:---|:---|
@@ -14,7 +26,8 @@
 | **03** | **stage changes** (`.` for all) | `git add .` |
 | **04** | **commit changes** | `git commit -m "*"` |
 | **05** | **push changes** | `git push` |
-### ❯ commiting a new folder
+
+### <a id="new-folder"></a>❯ committing a new folder
 
 | step | action | command |
 |:---|:---|:---|
@@ -25,7 +38,7 @@
 | **05** | **commit** | `git commit -m "*"` |
 | **06** | **push** | `git push -u origin main` |
 
-### ❯ reverting a commit
+### <a id="reverting"></a>❯ reverting a commit
 
 | step | action | command |
 |:---|:---|:---|
@@ -35,23 +48,19 @@
 | **04** | **push changes** | `git push` |
 
 # branches
-### ❯ creating branches
-| step | action | command |
-|:---|:---|:---|
-| **01** | **status check** | `git status` |    | **if you dont want to commit** | `git stash` |
-| **02** | **checkout** (`.` for all) | `git switch -c <*>` |
-| **03** | **commit changes** | `git add .` |
-| **04** | **push changes** | `git commit -m "*"` |
 
-### ❯ want to keep code
+### <a id="creating-branches"></a>❯ creating branches
 | step | action | command |
 |:---|:---|:---|
-| **01** | **status check** | `git switch main` |
-| **02** | **checkout** (`.` for all) | `git merge <*>` |
-| **03** | **commit changes** | `git branch -d <*>` |
+| **01** | **status check** | `git status` |
+| **--** | **if you don't want to commit** | `git stash` |
+| **02** | **create & switch branch** | `git switch -c <*>` |
+| **03** | **stage changes** (`.` for all) | `git add .` |
+| **04** | **commit changes** | `git commit -m "*"` |
 
-### ❯ want to delete code
+### <a id="keep-code"></a>❯ want to keep code
 | step | action | command |
 |:---|:---|:---|
-| **01** | **status check** | `git switch main` |
-| **02** | **checkout** (`.` for all) | `git branch -D <*>` |
+| **01** | **switch to main** | `git switch main` |
+| **02** | **merge branch** | `git merge <*>` |
+| **03** | **delete old branch** | `git branch -d <*>` |
