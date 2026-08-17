@@ -13,6 +13,7 @@
   * [creating branches](#creating-branches)
   * [merge code into main branch](#keep-branch)
   * [remove a branch](#remove-branch)
+  * [pull from a branch](#pull-branch)
 
 ---
 
@@ -71,3 +72,11 @@
 |:---|:---|:---|
 | **01** | **switch to main** | `git switch main` |
 | **02** | **force delete branch** | `git branch -D <*>` |
+
+### <a id="pull-branch"></a>❯ pulling from a branch
+| step | action | command |
+|:---|:---|:---|
+| **01** | **fetch** | `git fetch origin` |
+| **02** | **switch branch** | `git switch <*>` |
+| **03** | **pull** | `git pull origin <*>` |
+| **04** | **if you have uncommited work** | `git stash` |
