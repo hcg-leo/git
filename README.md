@@ -57,6 +57,7 @@
 | **02** | **create & switch branch** | `git switch -c <*>` |
 | **03** | **stage changes** (`.` for all) | `git add .` |
 | **04** | **commit changes** | `git commit -m "*"` |
+| **04** | **push new branch** | `git push -u origin <*>` |
 
 ### <a id="keep-branch"></a>❯ merging code into main branch
 | step | action | command |
